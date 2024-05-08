@@ -1,0 +1,137 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .navbar-brand {
+    padding: 10px;
+  }
+  
+  /* Flexbox for navbar items */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Navbar links */
+  .search-bar {
+    display: flex;
+  }
+  
+  .search-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .search-bar a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Change color on hover */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .search-bar {
+      margin-top: 10px; /* Add space between navbar brand and links */
+    }
+  
+    .search-bar a {
+      margin: 5px; /* Adjust margin for smaller screens */
+    }
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+    @media screen and (max-width: 600px) {
+      thead {
+        display: none;
+      }
+    
+      tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+      }
+    
+      tbody td {
+        display: block;
+        text-align: left;
+      }
+    
+      tbody td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        width: 50%;
+      }
+    }
+
+    .main {
+      display: flex; /* Use flexbox to align items */
+      justify-content: space-between; /* Spread items evenly */
+      align-items: center; /* Vertically center items */
+      padding: 20px; /* Add padding to the container */
+      border-radius: 20px; /* Add rounded border */
+      background-color: #f0f0f0; /* Add background color */
+    }
+    
+    h1 {
+      margin-right: 20px; /* Add some spacing between the image and text */
+    }
+    
+    .animate {
+      position: relative; /* Set position to relative for absolute positioning */
+    }
+    
+    .robo {
+      max-width: 40px; /* Limit the maximum width of the image */
+      height:30px; /* Maintain aspect ratio */
+      border-radius: 50%; /* Make the image round */
+      animation: spin 2s linear infinite; /* Add animation to the image */
+    }
+    
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    
